@@ -11,6 +11,14 @@ const userSchema = gql `
         createdAt: Datetime
     }
 
+    input UserInput {
+        name: String
+        active: Boolean
+        email: String
+        role: RolesType
+        createdAt: Datetime
+    }
+
     type Role {
         id: ID!
         type: RolesType!
@@ -28,8 +36,8 @@ const userSchema = gql `
     }
 
     type Mutation {
-        addUser(name: String!, active: Boolean!, email: String, role: RolesType!, createdAt: Datetime): User!
-        updateUser(id: ID!, name: String!, active: Boolean!, email: String, role: RolesType!): User!
+        addUser(user: UserInput): User!
+        updateUser(id: ID!, user: UserInput): User!
         deleteUser(id: ID!): ID!
     }
 `
