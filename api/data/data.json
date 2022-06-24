@@ -41,6 +41,20 @@
       "active": true,
       "email": "m@m.com",
       "role": 2
+    },
+    {
+      "name": "Amanda",
+      "active": true,
+      "role": 1,
+      "updatedAt": "2022-06-24T00:00:00.000Z",
+      "id": 7
+    },
+    {
+      "name": "Carol",
+      "active": true,
+      "role": 1,
+      "createdAt": "2022-06-24T00:00:00.000Z",
+      "id": 8
     }
   ],
   "roles": [
