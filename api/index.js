@@ -6,7 +6,7 @@ const UsersApi = require('./user/datasource/user')
 const typeDefs = [userSchema]
 const resolvers = [userResovers]
 
-const server = new ApolloServer({ 
+const server = new ApolloServer({
     typeDefs,
     resolvers,
     dataSources: () => {
